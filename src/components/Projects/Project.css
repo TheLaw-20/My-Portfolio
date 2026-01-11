@@ -1,0 +1,119 @@
+.projects-section {
+  padding: 80px 20px;
+  font-family: system-ui, sans-serif;
+    background-color: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.section-description {
+  text-align: center;
+  color: #888;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+.mini-con2 {
+  width: 80px;
+  height: 4px;
+  background: #1866e3;
+  margin: 20px auto 50px;
+  border-radius: 4px;
+}
+
+/* ================= Layout ================= */
+.projects-grid {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.project-card {
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* ================= Image Panel ================= */
+.img-card {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-card img {
+  
+  width: 50%;
+  height: auto;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .img-card img {
+  transform: scale(1.05);
+}
+
+/* ================= Content Panel ================= */
+.project-card-content {
+  flex: 1;
+  background: #fff;
+  padding: 30px;
+}
+
+.project-card-content h4{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.project-card-content p {
+  line-height: 1.6;
+}
+
+.project-card1 i{
+  margin-right: 6px;
+  color: #0081fa;
+}
+.project-card2 i{
+  margin-right: 6px;
+  color: green;
+}
+.project-card3 i{
+  margin-right: 6px;
+  color: #c62b59;
+}
+.project-card4 i{
+  margin-right: 6px;
+  color: #453108;
+}
+
+/* ================= Gradients ================= */
+.project-card1 { background: linear-gradient(to top, #0081fa, #7676d2); }
+.project-card2 { background: linear-gradient(to top, #339300, #567e57); }
+.project-card3 { background: linear-gradient(to top, #c62b59, #72434f); }
+.project-card4 { background: linear-gradient(to top, #a9a5a8, #453108); }
+
+/* ================= Responsive ================= */
+@media (max-width: 900px) {
+  .project-card {
+    flex-direction: column;
+  }
+
+  .img-card {
+    padding: 20px 0;
+  }
+}
