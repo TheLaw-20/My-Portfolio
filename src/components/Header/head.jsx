@@ -13,7 +13,6 @@ export default function Head() {
 
   return (
     <>
-    <head><meta name="google-site-verification" content="0OldCycPwFglpu_B4vOJfoHsCF8hc2kLp80GZCTSuuU" /></head>
       {/* NAVBAR */}
       <nav className="navbar">
         <div className="nav-logo">
